@@ -1,0 +1,288 @@
+html,
+body {
+  margin: 0;
+  /* เอาช่องว่างออกจาก body */
+  height: 100%;
+  /* ให้ body มีความสูงเต็มจอ */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  /* ฟอนต์ที่หรูหราขึ้น */
+}
+
+.Bg-all {
+  background-color: #f4f4f4;
+  /* สีพื้นหลังที่อ่อนนุ่ม */
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container {
+  padding: 40px;
+  /* ลด padding เพื่อความเรียบร้อย */
+  max-width: 750px;
+  /* จำกัดความกว้าง */
+  margin: auto;
+  /* จัดกลาง */
+  background-color: #ffffff;
+  /* สีพื้นหลังที่นุ่มนวล */
+  border-radius: 20px;
+  /* มุมมน */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  /* เงา */
+  border: 1px solid #e0e0e0;
+  /* กรอบบางๆ */
+}
+
+.header {
+  margin-bottom: 20px;
+  text-align: center;
+  /* จัดกึ่งกลาง */
+  font-size: 2em;
+  /* ขนาดตัวอักษรใหญ่ขึ้น */
+  color: #333;
+  /* สีตัวอักษรเข้ม */
+  font-weight: bold;
+  /* ตัวหนา */
+}
+
+.input-container {
+  margin-bottom: 20px;
+}
+
+.input-field{
+  max-width: 99%;
+}
+
+.input-field,
+.file-label {
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  /* ปรับให้เต็มความกว้าง */
+  transition: border-color 0.3s;
+  /* เพิ่มเอฟเฟกต์ */
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  /* เปลี่ยนสีเมื่อโฟกัส */
+  outline: none;
+  /* เอา outline ออก */
+}
+
+.file-label {
+  background-color: #007bff;
+  /* สีน้ำเงินสำหรับ label */
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  /* เพิ่ม padding */
+  text-align: center;
+  /* จัดกลางข้อความ */
+}
+
+.add-button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  /* สีเขียวสด */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  /* เพิ่มเอฟเฟกต์ */
+  margin-top: 10px;
+  /* เว้นระยะด้านบน */
+}
+
+.add-button:hover {
+  background-color: #218838;
+  /* เปลี่ยนสีเมื่อ hover */
+  transform: scale(1.05);
+  /* ขยายขณะ hover */
+}
+
+.menu-list {
+  margin-top: 20px;
+}
+
+.menu-item {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  /* พื้นหลังของรายการ */
+  transition: box-shadow 0.3s;
+  /* เพิ่มเอฟเฟกต์ */
+}
+
+.menu-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* เงาเมื่อ hover */
+}
+
+.food-info {
+  display: flex;
+  align-items: center;
+  /* จัดกลางแนวตั้ง */
+}
+
+.food-details {
+  flex: 1;
+  /* ทำให้มีพื้นที่เท่ากัน */
+}
+
+.food-info img {
+  width: 100px;
+  height: 100px;
+  margin-right: 15px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.food-info img:hover {
+  transform: scale(1.05);
+}
+
+.menu-actions {
+  margin-top: 10px;
+}
+
+.delete-button,
+.edit-button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  /* เพิ่มเอฟเฟกต์ */
+}
+
+.delete-button {
+  background-color: #dc3545;
+  /* สีแดง */
+  color: white;
+}
+
+.edit-button {
+  background-color: #007bff;
+  /* สีน้ำเงิน */
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.checkbox_01 {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  /* จัดกลางแนวตั้ง */
+}
+
+.checkbox_01 label {
+  background-color: #f1f1f1;
+  /* พื้นหลังของ label */
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  /* เพิ่มเอฟเฟกต์ */
+}
+
+.checkbox_01 label:hover {
+  background-color: #e2e2e2;
+  /* สีพื้นหลังเมื่อ hover */
+}
+
+.selected-foods {
+  margin-top: 60px;
+  background-color: #f9f9f9;
+  /* เปลี่ยนเป็นสีที่นุ่มนวลกว่า */
+  padding: 15px;
+  /* เพิ่ม padding */
+  border-radius: 5px;
+  border: 2px solid #d6d6d6;
+  /* กรอบที่อ่อนกว่า */
+}
+
+.removeSelected_Button {
+  background-color: #dc3545;
+  color: #ffffff;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.selected-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  /* เส้นแบ่งระหว่างรายการ */
+}
+
+.selected-item:last-child {
+  border-bottom: none;
+  /* ไม่มีเส้นแบ่งสุดท้าย */
+}
+
+.menu-section {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-list {
+  flex-grow: 1;
+}
+
+.selected-foods {
+  width: 300px;
+  background-color: #f9f9f9;
+  /* สีพื้นหลังที่นุ่มนวล */
+  max-height: 400px;
+  overflow-y: auto;
+  /* ให้สามารถเลื่อนดูได้ */
+}
+
+.payment_Button {
+  background-color: #28a745;
+  /* สีเขียว */
+  color: #ffffff;
+  /* สีตัวอักษรขาว */
+  padding: 10px 20px;
+  /* เพิ่ม padding */
+  border: none;
+  /* ไม่มีกรอบ */
+  border-radius: 5px;
+  /* มุมมน */
+  font-size: 16px;
+  /* ขนาดตัวอักษร */
+  cursor: pointer;
+  /* เปลี่ยนเป็นมือเมื่อวางเมาส์ */
+  margin-top: 20px;
+  /* เว้นระยะด้านบน */
+  transition: background-color 0.3s ease;
+  /* เอฟเฟกต์เมื่อวางเมาส์ */
+}
+
+.payment_Button:hover {
+  background-color: #218838;
+  /* สีเมื่อวางเมาส์ */
+}
